@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "453324933493",
+    "project_id": "dweia-137b1",
+    "storage_bucket": "dweia-137b1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453324933493:android:29ae213c38b7edc2b02b3c",
+        "android_client_info": {
+          "package_name": "com.example.dweia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-JX5tvRuKPCtYGTQi7GpNriOu_y9K5hQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
