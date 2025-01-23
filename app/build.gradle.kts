@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.dweia"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.dweia"
@@ -33,13 +33,11 @@ android {
 }
 
 dependencies {
-
+    implementation ("com.google.firebase:firebase-auth:22.1.1")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.firebase.database)
-    implementation(libs.firebase.auth)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoiceRole">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Bienvenue sur votre outil de suivi de santépersonnel"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_marginTop="120dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/light_green"
+        android:text="Commencer"
+        android:id="@+id/commencer"
+        android:textColor="@color/a5dher"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        />
+</LinearLayout>

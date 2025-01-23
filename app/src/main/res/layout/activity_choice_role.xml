@@ -1,0 +1,234 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/main"-->
+<!--    android:backgroundTint="@color/light_green"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".ChoiceRole">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/arc">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="75dp"-->
+<!--            android:src="@drawable/doctor"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Etes Vous ? "-->
+<!--        android:textSize="35dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:textColor="@color/a5dher"-->
+<!--        />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@drawable/border_background"-->
+<!--        android:padding="16dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:elevation="4dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:src="@drawable/ammi_el_rajel"-->
+<!--            android:layout_marginEnd="16dp" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Care Taker"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Medicine at your doorstep"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="@color/a5dher" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@drawable/border_background"-->
+<!--        android:padding="16dp"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:elevation="4dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:src="@drawable/ammi_el_rajel"-->
+<!--            android:layout_marginEnd="16dp" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Membre de Famille"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Medicine at your doorstep"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="@color/a5dher" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+
+<!--    </LinearLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:backgroundTint="@color/light_green"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoiceRole">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arc">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="75dp"
+            android:src="@drawable/doctor" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Etes Vous ? "
+        android:textSize="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/a5dher" />
+
+    <!-- Care Taker -->
+    <LinearLayout
+        android:id="@+id/layout_care_taker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border_background"
+        android:padding="16dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:elevation="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ammi_el_rajel"
+            android:layout_marginEnd="16dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Care Taker"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicine at your doorstep"
+                android:textSize="18sp"
+                android:textColor="@color/a5dher" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Family Member -->
+    <LinearLayout
+        android:id="@+id/layout_family_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border_background"
+        android:padding="16dp"
+        android:layout_margin="20dp"
+        android:elevation="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ammi_el_rajel"
+            android:layout_marginEnd="16dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Membre de Famille"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicine at your doorstep"
+                android:textSize="18sp"
+                android:textColor="@color/a5dher" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
