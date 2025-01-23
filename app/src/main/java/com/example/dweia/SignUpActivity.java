@@ -1,5 +1,6 @@
 package com.example.dweia;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.util.Patterns;
@@ -123,8 +124,8 @@ public class SignUpActivity extends AppCompatActivity {
         tvSignInLink.setOnClickListener(v -> {
             // Navigate to the sign-in activity
             Toast.makeText(SignUpActivity.this, "Navigating to Sign In...", Toast.LENGTH_SHORT).show();
-            // Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
-            // startActivity(intent);
+             Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
+             startActivity(intent);
         });
     }
 
@@ -137,7 +138,8 @@ public class SignUpActivity extends AppCompatActivity {
                             // Registration successful
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(SignUpActivity.this, "Compte créé avec succès", Toast.LENGTH_SHORT).show();
-
+                            Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
+                            startActivity(intent);
                             if (user != null) {
                                 user.sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override

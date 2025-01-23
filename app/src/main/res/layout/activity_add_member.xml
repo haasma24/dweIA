@@ -1,0 +1,140 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMember"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/a5dher"
+            android:text="Add new Patient"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <!-- Input Fields -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrer votre nom"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrer votre Prenom"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Toggleable Options -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/a5dher"
+                android:text="Avez-vous une handicap ?" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/a5dher"
+                android:text="Avez-vous une Assurance ?" />
+        </LinearLayout>
+
+        <!-- Chronic Disease Options -->
+        <TextView
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avez-vous une maladie chronique ?"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">>
+
+            <Button
+                android:id="@+id/diabete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:backgroundTint="@color/vert"
+                android:text="Diabete"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/vert"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/auth"
+                android:text="L'asthme" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/vert"
+                android:textColor="@android:color/white"
+                android:id="@+id/tension"
+                android:layout_marginLeft="10dp"
+                android:text="Tension" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/vert"
+            android:textColor="@android:color/white"
+            android:id="@+id/arthrite"
+            android:layout_marginLeft="70dp"
+            android:text="l'arthrite" />
+
+            <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/vert"
+            android:textColor="@android:color/white"
+            android:id="@+id/dos"
+            android:layout_marginLeft="10dp"
+            android:text="les maux de dos" />
+    </LinearLayout>
+
+
+        <!-- Submit Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/a5dher"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

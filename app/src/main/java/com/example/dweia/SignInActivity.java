@@ -107,7 +107,7 @@ public class SignInActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(SignInActivity.this, "Connexion réussie", Toast.LENGTH_SHORT).show();
                             // Navigate to Home or Dashboard Activity
-                            Intent intent = new Intent(SignInActivity.this, HomePage.class);
+                            Intent intent = new Intent(SignInActivity.this , AuxHomeActivity.class);
                             startActivity(intent);
                             finish();
                         } else {
