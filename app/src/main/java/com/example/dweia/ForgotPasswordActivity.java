@@ -50,6 +50,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 
     private void resetPassword() {

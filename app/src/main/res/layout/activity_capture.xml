@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".Capture">
 
     <ImageView
@@ -9,24 +10,46 @@
         android:layout_width="match_parent"
         android:layout_height="450dp"
         android:layout_centerHorizontal="true"
+        android:padding="60dp"
         android:scaleType="centerCrop"
-        android:layout_margin="50dp" />
+        android:src="@drawable/camera3d"
+        android:layout_margin="30dp" />
 
     <Button
+        android:textSize="25dp"
+
         android:id="@+id/btnCapture"
+        android:textColor="@color/a5dher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/light_green"
         android:text="Capture Photo"
         android:layout_below="@id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="5dp" />
 
     <Button
+        android:textColor="@color/a5dher"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/light_green"
         android:id="@+id/btnUpload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Upload Photo"
+        android:textSize="25dp"
         android:layout_below="@id/btnCapture"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:textColor="@color/a5dher"
+        android:layout_marginLeft="170dp"
+        android:backgroundTint="@color/light_green"
+        android:id="@+id/btnGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Photo from gallery"
+        android:layout_below="@id/btnUpload"
         android:layout_marginTop="16dp" />
 </RelativeLayout>

@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -29,6 +30,7 @@ public class Capture extends AppCompatActivity {
     private ImageView imageView;
     private Bitmap capturedImage;
 
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +39,7 @@ public class Capture extends AppCompatActivity {
         imageView = findViewById(R.id.imageView);
         Button btnCapture = findViewById(R.id.btnCapture);
         Button btnUpload = findViewById(R.id.btnUpload);
-
+        Button gallery = findViewById(R.id.btnGallery);
         // Bouton pour capturer une photo
         btnCapture.setOnClickListener(v -> {
             if (checkCameraPermission()) {
@@ -55,7 +57,17 @@ public class Capture extends AppCompatActivity {
                 Toast.makeText(this, "Veuillez d'abord capturer une photo", Toast.LENGTH_SHORT).show();
             }
         });
-    }
+
+
+    gallery.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(Capture.this , UploadPicture.class);
+            startActivity(intent);
+        }
+    });
+
+}
 
     // Ouvrir l'appareil photo
     private void openCamera() {
