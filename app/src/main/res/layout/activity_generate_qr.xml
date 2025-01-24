@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Text Input for QR Code Content -->
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text for QR Code"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittextbg"
+        android:inputType="text" />
+
+    <!-- Button to Generate QR Code -->
+    <Button
+        android:id="@+id/generateQRButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate QR Code"
+        android:backgroundTint="@color/a5dher"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ImageView to Display QR Code -->
+    <ImageView
+        android:id="@+id/qrCodeImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:contentDescription="QR Code"
+        android:scaleType="fitCenter" />
+
+</LinearLayout>

@@ -10,13 +10,18 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/ic_launcher_background"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/ic_launcher_background"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.DweIA"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Capture"
+            android:exported="false" />
+        <activity
+            android:name=".activity_generate_qr"
+            android:exported="false" />
         <activity
             android:name=".QRCode"
             android:exported="false" />
