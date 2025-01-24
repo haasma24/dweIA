@@ -22,18 +22,40 @@
 
     <ImageView
         android:layout_gravity="center_horizontal"
-        android:layout_width="280sp"
-        android:layout_marginTop="50sp"
-        android:layout_height="280sp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:src="@drawable/cadre"
         app:tint="@color/vert" />
 
-    <ImageView
-        android:layout_gravity="center_horizontal"
-        android:layout_width="50sp"
-        android:layout_marginTop="120sp"
-        android:layout_height="50sp"
-        android:src="@drawable/camera"
-        app:tint="@color/vert" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/a5dher"
+            android:textColor="@color/light_green"
+            android:textSize="20sp"
+            android:id="@+id/scan"
+            android:layout_marginTop="20dp"
+            android:text="Scan QR Code" />
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/camera"
+            app:tint="@color/vert" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
 
 </LinearLayout>
